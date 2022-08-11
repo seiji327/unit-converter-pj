@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+label {
+  color: inherit;
+  font: inherit;
+}
+
+/* VARIABLES */
+:root {
+  /* FONTS */
+  --FF: "Roboto Condensed", sans-serif;
+  --FS: clamp(1.8rem, 2.2vh, 2.5rem);
+  --ICON-SIZE: 5rem;
+  --LETTER-SPACING: 0.3rem;
+
+  /* COLOR */
+  --BODY-BGCOLOR: #577590;
+  --BOX-BGCOLOR: rgba(230, 230, 230, 0.7);
+  --BOX-COLOR: #000000;
+  --BOX-HOVER-COLOR: #9daab5;
+  --HEADER-BGCOLOR: #453f36;
+  --HEADER-COLOR: #ededf4;
+  --ICON-COLOR: black;
+  --INPUT-FIELD-BGCOLOR: #ffffffcd;
+
+  /* BORDER */
+  --BORDER-RADIUS: 20px;
+
+  /* TRANSITION */
+  --HOVER-OFF-TRANSITION-NORMAL: all ease-in-out 0.3s;
+  --HOVER-ON-TRANSITION-FAST: all ease-in-out 0.2s;
+  --HOVER-ON-TRANSITION-NORMAL: all ease-in-out 0.5s;
+
+  /* TRANSFORM */
+  --TRANSFORM-SCALE: scale(1.1);
+}
+
+/* UTILITY CLASSES */
+
+/* REMOVE arrows of input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: var(--FF);
+  font-size: 62.5%;
+}
+
+body {
+  font-size: var(--FS);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* APP */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

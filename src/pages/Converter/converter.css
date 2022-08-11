@@ -1,0 +1,37 @@
+/* CONVERTER */
+.converter {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.converter__back-button {
+  align-self: flex-start;
+  margin: 1.4rem;
+}
+
+.converter__h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.converter__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 850px) {
+  .converter__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .converter__h2 {
+    margin: 0;
+  }
+}

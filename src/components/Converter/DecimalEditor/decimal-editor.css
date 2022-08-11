@@ -1,0 +1,92 @@
+/* DECIMAL EDITOR */
+.decimal-editor {
+  background-color: var(--BOX-BGCOLOR);
+  border-radius: var(--BORDER-RADIUS);
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.decimal-editor__h4 {
+  padding: 0.7rem 0;
+}
+
+.decimal-editor__label {
+  background-color: var(--INPUT-FIELD-BGCOLOR);
+  border-radius: var(--BORDER-RADIUS);
+  border: none;
+  font-size: 1.2em;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.decimal-editor__buttons {
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bold;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.decimal-editor__buttons-minus-button {
+  /* Set BG transparent to adjust Safari */
+  background-color: transparent;
+  border-bottom-left-radius: var(--BORDER-RADIUS);
+}
+
+.decimal-editor__buttons-plus-button {
+  /* Set BG transparent to adjust Safari */
+  background-color: transparent;
+  border-bottom-right-radius: var(--BORDER-RADIUS);
+}
+
+.decimal-editor__buttons-minus-button,
+.decimal-editor__buttons-plus-button {
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+/* MEDIA QUERY */
+@media (hover: hover) {
+  .decimal-editor__buttons-minus-button:hover {
+    background-color: rgb(255, 104, 104);
+  }
+
+  .decimal-editor__buttons-plus-button:hover {
+    background-color: rgb(21, 197, 21);
+  }
+
+  .decimal-editor__buttons-minus-button:hover,
+  .decimal-editor__buttons-plus-button:hover {
+    color: white;
+    transition: var(--HOVER-ON-TRANSITION-FAST);
+  }
+}
+
+@media (hover: none) {
+  .decimal-editor__buttons-minus-button:active {
+    background-color: rgb(255, 104, 104);
+  }
+
+  .decimal-editor__buttons-plus-button:active {
+    background-color: rgb(21, 197, 21);
+  }
+
+  .decimal-editor__buttons-minus-button:active,
+  .decimal-editor__buttons-plus-button:active {
+    color: white;
+    transition: var(--HOVER-ON-TRANSITION-FAST);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .decimal-editor {
+    max-width: 200px;
+    width: 33.3%;
+  }
+}

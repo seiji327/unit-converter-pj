@@ -1,0 +1,12 @@
+/* SELECTOR */
+.selector {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--INPUT-FIELD-BGCOLOR);
+  border-radius: var(--BORDER-RADIUS);
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 2rem 4rem;
+}

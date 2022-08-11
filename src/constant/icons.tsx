@@ -1,0 +1,31 @@
+import {
+  FaRuler,
+  FaChartArea,
+  FaWeightHanging,
+  FaCube,
+  FaTemperatureHigh,
+  FaClock,
+  FaBold,
+  FaCarSide,
+  FaWalking,
+  FaWeight,
+  FaBatteryFull,
+  FaLightbulb,
+  FaWaveSquare,
+} from "react-icons/fa";
+
+export const MEASUREMENT_ICONS = {
+  length: <FaRuler />,
+  area: <FaChartArea />,
+  mass: <FaWeightHanging />,
+  volume: <FaCube />,
+  temperature: <FaTemperatureHigh />,
+  time: <FaClock />,
+  digital: <FaBold />,
+  speed: <FaCarSide />,
+  pace: <FaWalking />,
+  pressure: <FaWeight />,
+  power: <FaBatteryFull />,
+  energy: <FaLightbulb />,
+  frequency: <FaWaveSquare />,
+};

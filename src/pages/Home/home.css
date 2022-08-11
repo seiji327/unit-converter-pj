@@ -1,0 +1,8 @@
+/* HOME */
+.home {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
